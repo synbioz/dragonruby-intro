@@ -1,8 +1,11 @@
 class Player < Entity
+  WIDTH = 98
+  HEIGHT = 75
+
   attr_reader :score, :hp
 
   def initialize(x, y)
-    super(x, y, 32, 64, :player)
+    super(x, y, 98, 75, :player)
     @hp = 3
     @score = 0
     @score_by_star = 10

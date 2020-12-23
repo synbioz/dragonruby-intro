@@ -64,20 +64,8 @@ class Game
   end
 
   def handle_input(args)
-    if args.inputs.keyboard.key_held.send(INPUT_MAP[:left])
-      args.state.player.move(:left)
-    end
-
-    if args.inputs.keyboard.key_held.send(INPUT_MAP[:right])
-      args.state.player.move(:right)
-    end
-
-    if args.inputs.keyboard.key_held.send(INPUT_MAP[:up])
-      args.state.player.move(:up)
-    end
-
-    if args.inputs.keyboard.key_held.send(INPUT_MAP[:down])
-      args.state.player.move(:down)
+    INPUT_MAP.slice(:left, :right, :up, :down).each do |key, input|
+      args.state.player.move(key) if args.inputs.keyboard.key_held.send(input)
     end
   end
 
