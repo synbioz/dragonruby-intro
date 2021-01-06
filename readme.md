@@ -12,4 +12,4 @@ et les rendu devrait être similaire à ça:
 
 # Crédits
 
-[Arts](https://opengameart.org/content/space-shooter-redux) by [Kenney](www.kenney.nl)
+[Arts](https://opengameart.org/content/space-shooter-redux) by [Kenney](https://www.kenney.nl)
